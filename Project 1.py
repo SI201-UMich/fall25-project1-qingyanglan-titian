@@ -4,11 +4,13 @@
 # Student ID: 3407 1696
 # Email: qylan@umich.edu
 # Collaborators: Adam Weng, Yufan Xu
+# Calculation I:Qingyang Lan Calculation II: Adam Weng Calculation III: Yufan Xu
+# Main coding: Qingyang Lan, Adam Weng Diagram: Yufan Xu
 # GenAI Usage: Asked ChatGPT to help debug, format.
 # =========================================================
 
 import csv
-
+import unittest
 
 # ---------------------------------------------------------
 # Part 1: Read CSV file into list of dictionaries
@@ -263,6 +265,7 @@ def main():
 
 def test_avg_profit_by_subcategory_region():
     print("\nRunning test_avg_profit_by_subcategory_region...")
+    
     # General Case 1
     data = [
         {'Sub-Category': 'Phones', 'Region': 'East', 'Profit': '100'},
@@ -288,6 +291,7 @@ def test_avg_profit_by_subcategory_region():
 #----------------------------------------------------------------------
 def test_profit_ratio_by_discount_region():
     print("\nRunning test_profit_ratio_by_discount_region...")
+    
     # General Case 1
     data = [
         {'Discount': '0.1', 'Profit': '100', 'Sales': '1000', 'Region': 'East'},
@@ -312,6 +316,7 @@ def test_profit_ratio_by_discount_region():
 #----------------------------------------------------------------------
 def test_avg_order_value_by_segment_shipmode():
     print("\nRunning test_avg_order_value_by_segment_shipmode...")
+    
     # General Case 1
     data = [
         {'Segment': 'Consumer', 'Ship Mode': 'Standard Class', 'Sales': '200', 'Quantity': '1'},
@@ -322,7 +327,7 @@ def test_avg_order_value_by_segment_shipmode():
 
     # General Case 2
     val = result[('Consumer', 'Standard Class')]
-    assert abs(val - 150.0) < 0.001  # average order value should be 150 ✅
+    assert abs(val - 150.0) < 0.001  
 
     # Edge Case 1: Zero quantity
     data = [{'Segment': 'Consumer', 'Ship Mode': 'Standard Class', 'Sales': '100', 'Quantity': '0'}]
@@ -336,6 +341,7 @@ def test_avg_order_value_by_segment_shipmode():
 #----------------------------------------------------------------------
 def test_get_top3_cities_by_profit_in_category():
     print("\nRunning test_get_top3_cities_by_profit_in_category...")
+    
     # General Case 1
     data = [
         {'City': 'New York', 'Profit': '500', 'Category': 'Furniture'},
