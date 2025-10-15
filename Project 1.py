@@ -14,12 +14,7 @@ import csv
 # Part 1: Read CSV file into list of dictionaries
 # ---------------------------------------------------------
 def read_csv_to_dict(filename):
-    """
-    Reads a CSV file and converts it into a list of dictionaries.
-    Each row represents one transaction.
-    INPUT: filename (str)
-    OUTPUT: data (list[dict])
-    """
+ 
     data = []
     with open(filename, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -32,11 +27,7 @@ def read_csv_to_dict(filename):
 # Part 2: Write dictionary results to a CSV file
 # ---------------------------------------------------------
 def write_dict_to_csv(filename, result_dict, headers):
-    """
-    Writes the results (dictionary or nested dictionary) to a CSV file.
-    INPUT: filename (str), result_dict (dict), headers (list[str])
-    OUTPUT: None (writes to file)
-    """
+   
     with open(filename, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(headers)
