@@ -4,7 +4,7 @@
 # Student ID: 3407 1696
 # Email: qylan@umich.edu
 # Collaborators: Adam Weng, Yufan Xu
-# GenAI Usage: Asked ChatGPT to help debug, format, and verify compliance with rubric.
+# GenAI Usage: Asked ChatGPT to help debug, format.
 # =========================================================
 
 import csv
@@ -21,7 +21,7 @@ def read_csv_to_dict(filename):
     OUTPUT: data (list[dict])
     """
     data = []
-    with open(filename, newline='', encoding='utf-8') as csvfile:
+    with open(filename, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             data.append(row)
