@@ -385,4 +385,4 @@ if __name__ == "__main__":
     test_profit_ratio_by_discount_region()
     test_avg_order_value_by_segment_shipmode()
     test_get_top3_cities_by_profit_in_category()
-    print("All tests completed successfully")
+    print("All tests completed successfully!")
