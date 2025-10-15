@@ -7,7 +7,7 @@
 # Calculation I:Qingyang Lan Calculation II: Adam Weng Calculation III: Yufan Xu
 # Main coding: Qingyang Lan, Adam Weng Diagram: Yufan Xu
 # GenAI Usage: Asked ChatGPT to help debug, format.
-# Video upload in google drive
+# [Click here to watch on Google Drive]（https://drive.google.com/file/d/1YRMZwQDUv0TSze4fMI0azqgFf4BL0uHr/view?usp=drive_link）
 # =========================================================
 
 import csv
